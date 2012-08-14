@@ -1,0 +1,10 @@
+<% scripts.push('/js/jquery.form-minified.js', '/js/upload.js', '/js/jquery.Jcrop.min.js'); cssFiles.push("/css/jquery.Jcrop.min.css"); %>
+<form id="uploadForm"
+      enctype="multipart/form-data"
+      action="/api/photos"
+      method="post">
+  <input type="file" id="userPhotoInput" name="userPhoto" />
+</form>
+<span id="status"></span>
+<img src="" alt="" id="uploadedImage" />
+<input type="button" id="sendCrop" value="Crop" disabled="disabled" />
